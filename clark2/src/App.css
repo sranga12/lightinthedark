@@ -66,3 +66,25 @@
 .darkened{
   filter: opacity(50%)
 }
+
+/* blink test ---
+.blink {
+  animation: blink 1s infinite;
+  
+  color: blueviolet;
+  font-size: 48pt;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+*/

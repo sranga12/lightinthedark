@@ -67,7 +67,7 @@
   filter: opacity(50%)
 }
 
-/* blink test ---
+/* blink test --- 
 .blink {
   animation: blink 1s infinite;
   
@@ -86,5 +86,4 @@
     opacity: 1;
   }
 }
-
 */

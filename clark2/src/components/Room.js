@@ -50,7 +50,7 @@ class Room extends React.Component {
       {/*fire alarm -- lights above kitchen bar table thing    #C9C5C1     #DBD3D0 */}
       <a-cylinder width="2" height=".5" position="9 15 -13.5" rotation="0 70 0 " color={this.state.lights_on ? "#C4BDB9": "#403a36"}> </a-cylinder>
 
-      <Light></Light>
+      <Light blink={this.state.lights_on ? false: true}></Light>
 
       {/*oxymoron --- -..- -.-- -- --- .-. --- -. */}
       <a-sky src={this.state.lights_on? "#sky" :"#dark"}></a-sky>

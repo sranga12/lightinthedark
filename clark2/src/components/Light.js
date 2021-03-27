@@ -7,6 +7,8 @@ class Light extends React.Component {
     }
     render() {
         /*oxymoron --- -..- -.-- -- --- .-. --- -. */
+        /*console.log(this.props.blink);*/
+        if(this.props.blink) {
         return (
             <a-entity>
                 <a-circle shader="flat" light="type: hemisphere; color: ##702A01" radius="0.06"
@@ -66,6 +68,16 @@ class Light extends React.Component {
                 </a-circle>
             </a-entity>
         );
+        }
+        else {
+            return (
+            <a-entity>
+                <a-circle shader="flat" light="type: hemisphere; color: ##702A01" radius="0.06"
+                    position="5.5 10 -8.5" rotation="90 0 0" color="#D91C07">
+                </a-circle>
+            </a-entity>
+            );
+        }
     }
 }
 

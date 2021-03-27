@@ -1,14 +1,13 @@
 import '../App.css';
 import React from 'react';
 
-var list = ["https://www.google.com"]
 class Book extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
           lights_on: this.props.lights,
           info: props,
-          url: list[0]
+          url: "https://www.hoohacks.io/books/book" + this.props.lii
         };
     }
 

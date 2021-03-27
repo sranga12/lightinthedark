@@ -1,41 +1,21 @@
 import '../App.css';
+import React from 'react';
 
 class Book extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-          visible: false,
-          number: -1
+          lights_on: true,
+          info: props
         };
-        this.books=[
-            {
-                text: "Lorem ipsum dolor",
-                title: "The meaning of life"
-            },
-            {
-                text: "Lorem ipsum dolor",
-                title: "The next one"
-            },
-        ]
     }
-
-  
     render() {
-        new_style = {visible: this.state.number >=0 && this.state.number < this.books.length && this.state.visible}
         return (
-            <div style={new_style} className="overlay" onClick={off}>
-                <h1>{this.books[this.state.number.text]}</h1>
-            </div>
+            <a-box depth={this.props.depth} height={this.props.height}  width={this.props.width} position={this.props.position} rotation={this.props.rotation} color={this.state.lights_on ? this.props.color : "#000000"}></a-box>
         );
     }
 
-    off(){
-        this.setState(state =>({
-            visible: false,
-            number: -1
-        }));
-        
-    }
+    
   }
 
 
